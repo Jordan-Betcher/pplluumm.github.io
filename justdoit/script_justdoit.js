@@ -1,0 +1,5 @@
+
+
+function buttonStart() {
+  alert("Start");
+}
