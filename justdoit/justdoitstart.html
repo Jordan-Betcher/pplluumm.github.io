@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="script_justdoit.js"></script>
+    <link rel="stylesheet" href="justdoitstart.css">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color:#f1dec2;">
     <section id="section_start">
-        <div class="bg-dark text-light p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
+        <div class="p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div>
@@ -22,13 +23,18 @@
             </div>
         </div>
     </section>
-    <section id="section_goal">
-        <div class="bg-dark text-light p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
+    <section id="section_goal" style="display: none;">
+        <div class="p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div>
                         <h1>What is the best thing to do right now?</h1>
-                        <textarea></textarea>
+                        <div class="wrapper">
+                            <div class="input-data">
+                               <input type="text" required>
+                               <div class="underline"></div>
+                            </div>
+                         </div>
                         <br>
                         <button id="button_submit_goal" onclick="buttonSubmitGoal()" class="btn btn-primary btn-lg">Submit</button>
                     </div>
@@ -36,8 +42,8 @@
             </div>
         </div>
     </section>
-    <section id="section_mindfulness">
-        <div class="bg-dark text-light p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
+    <section id="section_mindfulness" style="display: none;">
+        <div class="p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div>
@@ -49,24 +55,37 @@
         </div>
     </section>
     
-    <section id="section_objective">
-        <div class="bg-dark text-light p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
+    <section id="section_objective" style="display: none;">
+        <div class="p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div>
-                        <h1>What is the next tactile step towards ___ that is under a minute</h1>
-                        <p>Where? <textarea></textarea></p>
+                        <h1 id="question_create_objective">What is the next tactile step towards ___ that is under a minute</h1>
+                        <div class="wrapper">
+                            <div class="input-data">
+                               <input type="text" required>
+                               <div class="underline"></div>
+                               <label>Where?</label>
+                            </div>
+                         </div>
                         <br>
-                        <p>What? <textarea></textarea></p>
+                        <div class="wrapper">
+                            <div class="input-data">
+                               <input type="text" required>
+                               <div class="underline"></div>
+                               <label>What?</label>
+                            </div>
+                         </div>
                         <br>
+               
                         <button id="button_submit_objective" onclick="buttonsubmitObjective()" class="btn btn-primary btn-lg">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="section_done">
-        <div class="bg-dark text-light p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
+    <section id="section_done" style="display: none;">
+        <div class="p-5 p-lg-0 pt-lg-0 text-center text-sm-start">
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div>
